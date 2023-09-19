@@ -1,6 +1,7 @@
 FROM ubuntu:22.04
 
-COPY ./src ./config ./
+COPY ./src ./src
+COPY ./config ./config
 
 RUN apt-get update && \
 	apt-get install wget -y && \ 
