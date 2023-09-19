@@ -1,5 +1,6 @@
 version: '3.1'
 
 services:
-  build: .
-  container_name: meetingbot
+  app:
+    build: .
+    container_name: meetingbot
