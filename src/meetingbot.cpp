@@ -5,7 +5,7 @@
 
 #include <dpp/dpp.h>
 
-json CONFIG = nlohmann::json::parse(std::ifstream("/config/config.json"));
+nlohmann::json CONFIG = nlohmann::json::parse(std::ifstream("/config/config.json"));
 
 int main()
 {
