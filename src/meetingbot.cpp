@@ -31,7 +31,7 @@ int main()
 					{
 						bot.log(dpp::ll_info, "[INFO] - Sent Message with ID: " + std::to_string(callback.get<dpp::message>().id));
 						CONFIG["message-id"] = uint64_t(callback.get<dpp::message>().id);
-						std::ofstream("config.json") << CONFIG;
+						std::ofstream("/config/config.json") << CONFIG;
 					});
 			}
 
